@@ -1,1 +1,17 @@
 env: "development"
+
+domain: "localhost"
+
+kafka:
+  consumer:
+    group_id: "notification"
+    topic:
+      - "notification"
+    brokers:
+      - "localhost:9092"
+
+db:
+  mongo:
+    host: "localhost"
+    port: "27017"
+    database: "appdb"
